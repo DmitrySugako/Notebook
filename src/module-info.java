@@ -1,9 +1,0 @@
-/**
- * 
- */
-/**
- * @author jcdmi
- *
- */
-module Notebook {
-}
