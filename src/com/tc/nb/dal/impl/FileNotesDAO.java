@@ -39,9 +39,9 @@ public class FileNotesDAO implements NotesDAO {
 		}
 
 		DateFormat format = new SimpleDateFormat("MMMM d, yyyy", Locale.ENGLISH);
-		Note note = new Note();
+		
 		for (int i = 0; i < tempNotes.size() - 1; i++) {
-			notes.add(note);
+			Note note = new Note();
 			note.setHeader(tempNotes.get(i));
 			i++;
 			try {
@@ -52,6 +52,7 @@ public class FileNotesDAO implements NotesDAO {
 			i++;
 			note.setNoteContent(tempNotes.get(i));
 			i++;
+			notes.add(note);
 
 		}
 		return notes;
