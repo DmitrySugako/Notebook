@@ -5,7 +5,7 @@ import com.tc.nb.dal.impl.FileNotesDAO;
 public final class DAOProvider {
 	private static final DAOProvider instance = new DAOProvider();
 	
-	private NotesDAO notesDAO = new FileNotesDAO();
+	private NotesDAO notesDAO = new FileNotesDAO(); \\Unhandled exception type DAOException
 	
 	
 	private DAOProvider() {}
